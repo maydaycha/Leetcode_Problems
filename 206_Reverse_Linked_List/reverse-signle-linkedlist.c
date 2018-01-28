@@ -1,14 +1,24 @@
+/**
+ * https://leetcode.com/problems/reverse-linked-list/description/
+ * Reverse a singly linked list.
+ *
+ * click to show more hints.
+ *
+ * Hint:
+ * A linked list can be reversed either iteratively or recursively. Could you implement both? */
+
+
 
 #include <stdio.h>
+
+/**
+ * Definition for singly-linked list. */
 
 struct ListNode {
     int val;
     struct ListNode *next;
 };
 
-/**
-* Definition for singly-linked list.
-*/
 struct ListNode* reverseList(struct ListNode* head) {
 
     struct ListNode *prev = NULL, *next = NULL;
